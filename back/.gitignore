@@ -1,0 +1,11 @@
+.vscode
+__cache__
+*.bak
+__pycache__
+.env
+*.lock
+!Pipfile.lock
+key.json
+errors.log
+venv
+.venv

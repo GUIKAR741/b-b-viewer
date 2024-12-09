@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+python-dotenv = "*"
+python-decouple = "*"
+gunicorn = "*"
+gevent = "*"
+pulp = "*"
+numpy = "*"
+scipy = "*"
+
+[dev-packages]
+pycodestyle = "*"
+pylint = "*"
+pydocstyle = "*"
+autopep8 = "*"
+pep8 = "*"
+
+[requires]
+python_version = "3.13"
+python_full_version = "3.13.0"

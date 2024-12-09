@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  bb_back:
+    container_name: bb_back
+    hostname: bb_back
+    build: back/.
+    environment:
+      FLASK_APP: app:start_app
+      FLASK_ENV: production
+      FLASK_DEBUG: 'false'
+      SECRET_KEY: zYcnZmd39CYhjkgGqeBx*cxeyDTrM@7e
+      TZ: America/Fortaleza
+    ports:
+      - 5000:5000
+  bb_front:
+    container_name: bb_front
+    hostname: bb_front
+    build: front/.
+    ports:
+      - 8080:80
